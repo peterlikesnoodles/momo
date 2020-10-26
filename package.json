@@ -1,0 +1,34 @@
+{
+  "name": "momo",
+  "version": "0.0.1",
+  "description": "Temp dev server for mocking backend calls.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "yarn start",
+    "start:dev": "yarn start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterlikesnoodles/momo.git"
+  },
+  "keywords": [
+    "momo",
+    "test",
+    "backend"
+  ],
+  "author": "Peter<peter@wanglu.pw>",
+  "bugs": {
+    "url": "https://github.com/peterlikesnoodles/momo/issues"
+  },
+  "homepage": "https://github.com/peterlikesnoodles/momo#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
