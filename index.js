@@ -7,7 +7,7 @@ const Port = 8086
 const app = express()
 app.use(cors())
 
-app.post('/upload', (req, res, next) => {
+app.post('/api/admin/file/upload', (req, res, next) => {
   const form = formidable({multiples: true})
   form.parse(req, (err, fields, files) => {
     if (err) {
@@ -16,7 +16,9 @@ app.post('/upload', (req, res, next) => {
     }
 
     res.writeHead(200, {'content-type': 'application/json'})
-    res.end(JSON.stringify({fields, files}, null, 2))
+    // res.end(JSON.stringify({fields, files}, null, 2))
+    const data = 'https://hero.wanglu.pw/e5c1fcc5870b079897b246d3b3b507a4.png'
+    res.end(JSON.stringify({data}), null, 2)
   })
 })
 
